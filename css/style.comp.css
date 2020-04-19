@@ -1,0 +1,178 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.6%; }
+  @media only screen and (max-width: 81.25em) {
+    html {
+      font-size: 58%; } }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 53%; } }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  background-color: #e5eff5;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  line-height: 1.6; }
+
+.container {
+  background-color: #e5eff5;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  place-content: center;
+  font-size: 1.6rem; }
+  @media only screen and (max-width: 62.5em) {
+    .container {
+      display: flex;
+      padding: 2rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+  @media only screen and (max-width: 43.75em) {
+    .container {
+      padding: 0; } }
+
+.heading {
+  font-weight: 700;
+  color: #2ab2af;
+  font-size: 3.25rem;
+  margin-bottom: 2rem; }
+
+.subheading {
+  font-size: 1.8rem;
+  margin-bottom: 1.3rem;
+  font-weight: 700; }
+  .subheading--teal {
+    color: #c0df34; }
+  .subheading--grey {
+    color: #e5eff5; }
+
+.body {
+  color: #98a6bd; }
+
+.description {
+  width: 70%;
+  font-size: 1.5rem;
+  color: rgba(229, 239, 245, 0.7); }
+
+.price {
+  color: rgba(204, 206, 207, 0.847);
+  margin-bottom: -0.3rem; }
+  .price span {
+    font-family: inherit;
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: 700; }
+  .price__body {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #e5eff5;
+    margin-bottom: 3rem; }
+
+.attribution {
+  font-size: 1.4rem;
+  text-align: center; }
+
+.attribution a {
+  color: #3e52a3; }
+
+.card {
+  color: #fff;
+  width: 50vw;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  align-items: stretch;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem; }
+  @media only screen and (max-width: 62.5em) {
+    .card {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+      padding: 2rem 2.8rem;
+      box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.4), 4px 4px 8px rgba(0, 0, 0, 0.15); } }
+  @media only screen and (max-width: 43.75em) {
+    .card {
+      display: flex;
+      justify-content: center;
+      width: 300px;
+      flex-direction: column;
+      padding: 0;
+      box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.4), 4px 4px 8px rgba(0, 0, 0, 0.15); } }
+  .card__item {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column; }
+    @media only screen and (max-width: 43.75em) {
+      .card__item {
+        width: 100%; } }
+    .card__item--1 {
+      grid-column: 1 / span 2;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 3.8rem 4rem 3rem; }
+      @media only screen and (max-width: 62.5em) {
+        .card__item--1 {
+          flex-basis: 0 0 33.3333333%; } }
+      @media only screen and (max-width: 43.75em) {
+        .card__item--1 {
+          order: 1; } }
+    .card__item--2 {
+      background-color: #2ab2af;
+      padding: 4rem 2rem 3rem 4rem; }
+      @media only screen and (max-width: 62.5em) {
+        .card__item--2 {
+          flex: 0 0 33.333333%;
+          order: -1;
+          padding: 3rem; } }
+      @media only screen and (max-width: 43.75em) {
+        .card__item--2 {
+          order: 1; } }
+    .card__item--3 {
+      background-color: rgba(42, 178, 175, 0.7);
+      padding: 4rem 2rem 3rem 4rem; }
+      @media only screen and (max-width: 62.5em) {
+        .card__item--3 {
+          flex: 0 0 33.33333333%;
+          font-size: 1.9rem; } }
+      @media only screen and (max-width: 43.75em) {
+        .card__item--3 {
+          order: 1; } }
+
+.cta:link,
+.cta:active {
+  text-decoration: none;
+  text-align: center;
+  padding: 1.2rem 3rem;
+  width: 85%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: #c0df34;
+  color: white;
+  border: none;
+  outline: none;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease; }
+
+.cta:hover,
+.cta:active {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); }

@@ -1,0 +1,31 @@
+{
+	"name": "single-price-grid-component-master",
+	"version": "1.0.0",
+	"description": "coding challenges",
+	"main": "index.js",
+	"scripts": {
+		"watch:sass": "node-sass main.scss css/style.comp.css -w",
+		"compile:sass": "node-sass main.scss css/style.comp.css",
+		"compress:css": "node-sass css/style.comp.css css/styles.css --output -style compressed",
+		"build": "npm-run-all compile:sass compress:css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/temideewan/coding-challenges.github.io.git"
+	},
+	"author": "Temidayo",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/temideewan/coding-challenges.github.io/issues"
+	},
+	"homepage": "https://github.com/temideewan/coding-challenges.github.io#readme",
+	"devDependencies": {
+		"gulp": "^4.0.2",
+		"gulp-uglify": "^3.0.2",
+		"node-sass": "^4.13.1",
+		"npm-run-all": "^4.1.5"
+	},
+	"dependencies": {
+		"live-server": "^1.2.1"
+	}
+}
